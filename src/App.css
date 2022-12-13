@@ -1,5 +1,22 @@
 .App {
   text-align: center;
+  background-color: #443742;
+  font-size: 15px;
+}
+
+
+@font-face {
+  font-family: 'OPTIColumna-Solid';
+  src: url('Assets\\Fonts\\OPTIColumna-Solid.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Draft B Regular';
+  src: url('Assets\\Fonts\\Draft B Regular.otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .App-logo {
