@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+    font-family: 'OPTIColumna-Solid';
+}
+
+.header .button {
+    font-family: 'Draft B Regular';
+    position: absolute;
+    right: 10px;
+    border: 2px solid #CEA07E;
+    border-radius: 4px;
+    background-color: #443742;
+    font-size: 15px;
+}
+
+.header .button:hover {
+    color: absolute;
+    transition-duration: 250ms;
+    border-color: #846C5B;
+    color: #846C5B;
+}
+
+.font-orange {
+    color: #CEA07E;
+}
+
+.title {
+    font-size: 30px;
+}
