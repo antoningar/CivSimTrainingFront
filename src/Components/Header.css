@@ -19,7 +19,6 @@
 }
 
 .header .button:hover {
-    color: absolute;
     transition-duration: 250ms;
     border-color: #846C5B;
     color: #846C5B;

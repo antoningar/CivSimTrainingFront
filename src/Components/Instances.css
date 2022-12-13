@@ -7,7 +7,13 @@
     margin: 0 auto;
 }
 
-.instances .button {
+.utils {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.instance-button {
     font-family: 'Draft B Regular';
     border: 2px solid #443742;
     border-radius: 4px;
@@ -16,38 +22,64 @@
     color: #443742;
 }
 
-#filter-checkbox {
+.filter-label:hover {
+    transition-duration: 300ms;
+    color: #EDD9A3;
+}
+
+.filter-label, .dropdown-options label {
+    appearance: auto;
+    color: #443742;
+    font-family: 'Draft B Regular';
+    padding: 1px 6px;
+}
+
+.dropdown-options label:hover {
+    transition-duration: 300ms;
+    color: #EDD9A3;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 2px solid #EDD9A3;
+    transition: all 0.3s ease;
+    bottom : 50%;
+    top: 0;
+}
+
+.instance-button:hover {
+    transition-duration: 300ms;
+    border-color: #EDD9A3;
+    color: #EDD9A3;
+}
+
+input[type=checkbox] {
     display: none;
 }
 
 .dropdown-options {
     display: none;
+    position: fixed;
+    text-align: left;
+    flex-direction: column;
 }
-
-.dropdown-civs {
+.dropdowns {
     display: none;
+    flex-direction: column;
+    left: 20px;
+    position: relative;
 }
 
-.dropdown-maps {
-    display: none;
+#filter-checkbox:checked ~ .dropdown-options{
+    display: flex;
 }
 
-.dropdown-goals {
-    display: none;
+#civ-checkbox:checked ~ .dropdown-civs{
+    display: flex;
 }
 
-#filter-checkbox:checked + label .dropdown-options {
-    display: block;
+#map-checkbox:checked ~ .dropdown-maps{
+    display: flex;
 }
 
-.options-civ:hover .dropdown-civs {
-    display: block;
-}
-
-.options-map:hover .dropdown-maps {
-    display: block;
-}
-
-.options-goal:hover .dropdown-goals {
-    display: block;
+#goal-checkbox:checked ~ .dropdown-goals{
+    display: flex;
 }
