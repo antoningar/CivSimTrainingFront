@@ -1,0 +1,53 @@
+.instances {
+    background-color: #CEA07E;
+    height: 80%;
+    top: 50px;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.instances .button {
+    font-family: 'Draft B Regular';
+    border: 2px solid #443742;
+    border-radius: 4px;
+    background-color: #CEA07E;
+    font-size: 15px;
+    color: #443742;
+}
+
+#filter-checkbox {
+    display: none;
+}
+
+.dropdown-options {
+    display: none;
+}
+
+.dropdown-civs {
+    display: none;
+}
+
+.dropdown-maps {
+    display: none;
+}
+
+.dropdown-goals {
+    display: none;
+}
+
+#filter-checkbox:checked + label .dropdown-options {
+    display: block;
+}
+
+.options-civ:hover .dropdown-civs {
+    display: block;
+}
+
+.options-map:hover .dropdown-maps {
+    display: block;
+}
+
+.options-goal:hover .dropdown-goals {
+    display: block;
+}

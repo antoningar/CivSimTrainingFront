@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    padding: 10px;
+    height: 90px;
     font-family: 'OPTIColumna-Solid';
+    background-color: #443742;
 }
 
 .header .button {
@@ -15,6 +15,7 @@
     border-radius: 4px;
     background-color: #443742;
     font-size: 15px;
+    color: #CEA07E;
 }
 
 .header .button:hover {
@@ -24,10 +25,7 @@
     color: #846C5B;
 }
 
-.font-orange {
-    color: #CEA07E;
-}
-
 .title {
     font-size: 30px;
+    color: #CEA07E;
 }
