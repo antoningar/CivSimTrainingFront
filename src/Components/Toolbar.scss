@@ -3,18 +3,14 @@
 $color-background: #443742;
 $color-typo: #CEA07E;
 */
-.toolbar {
-    //background-color: #CEA07E;
-    height: 80%;
-    top: 50px;
-    position: relative;
-    width: 60%;
-    margin: 0 auto;
-}
 
 .utils {
     display: flex;
     height: 30px;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
     align-items: center;
     justify-content: space-around;
 }
@@ -32,7 +28,7 @@ $color-typo: #CEA07E;
     border: 2px solid #CEA07E;
     border-radius: 4px;
     padding: 1px 6px;
-    margin-bottom: 2px;
+    margin-bottom: 2px; 
 }
 
 .filter-label:hover {

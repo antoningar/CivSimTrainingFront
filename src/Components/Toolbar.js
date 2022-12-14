@@ -83,24 +83,12 @@ function SearchBox() {
     );
 }
 
-function ListInstances() {
-    return (
-        <div>
-        </div>
-    );
-}
-
 export function ToolBar() {
     return (
-        <div className="toolbar">
-            <div className="utils">
-                    <NewInstanceButton className={"toolbar-button"}/>
-                    <SearchBox />
-                    <FilterInstanceButton className={"filter-button"}/>
-            </div>
-            <div className="list-instances">
-                <ListInstances />
-            </div>
+        <div className="utils">
+                <NewInstanceButton className={"toolbar-button"}/>
+                <SearchBox />
+                <FilterInstanceButton className={"filter-button"}/>
         </div>
     );
 }

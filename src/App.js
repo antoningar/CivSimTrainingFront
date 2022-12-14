@@ -1,5 +1,6 @@
 import { Header } from "./Components/Header";
 import { ToolBar } from "./Components/Toolbar";
+import { Instances } from "./Components/Instances";
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <ToolBar />
+      <Instances />
     </div>
   );
 }
