@@ -9,8 +9,8 @@ function ConnectButton({ className }) {
 export function Header() {
     return (
         <div className="header">
-            <label className="font-orange title">CIV SIM TRAINING</label>
-            <ConnectButton className={"button font-orange"} />
+            <label className="title">CIV SIM TRAINING</label>
+            <ConnectButton className={"button"} />
         </div>
     )
 }
