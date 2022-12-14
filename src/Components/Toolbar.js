@@ -30,11 +30,11 @@ function FilterInstanceButton({ className }) {
                 type="checkbox" id="filter-checkbox" checked={expend} 
                 onChange={(e) => {setExpend(e.target.checked ?  true : false)}}
             />
-            <label className="filter-label" for="filter-checkbox">Filter by</label>
+            <label className="filter-label" htmlFor="filter-checkbox">Filter by</label>
             <div className="dropdown-options">
                 
                 <input type="checkbox" id="civ-checkbox"/>
-                <label className="options-civ dropdown-select" for="civ-checkbox">Civilization</label>
+                <label className="options-civ dropdown-select" htmlFor="civ-checkbox">Civilization</label>
                 <div className="dropdowns  dropdown-civs">
                     <label className="dropdown-select" onClick={sortByCiv}>Dido</label>
                     <label className="dropdown-select" onClick={sortByCiv}>Trajan</label>
@@ -48,7 +48,7 @@ function FilterInstanceButton({ className }) {
                 </div>
 
                 <input type="checkbox" id="goal-checkbox"/>
-                <label className="options-goal dropdown-select" for="goal-checkbox">Goal</label>
+                <label className="options-goal dropdown-select" htmlFor="goal-checkbox">Goal</label>
                 <div className="dropdowns dropdown-goals">
                     <label className="dropdown-select" onClick={sortByGoal}>Science Victory</label>
                     <label className="dropdown-select" onClick={sortByGoal}>Cultural Victory</label>
