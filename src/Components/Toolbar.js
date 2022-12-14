@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./Instances.css";
+import "./Toolbar.scss";
 
 function NewInstanceButton({ className }) {
     return (
-        <button className={className}>NEW INSTANCE</button>
+        <button className={className}>New instance</button>
     );
 }
 
@@ -58,6 +58,31 @@ function FilterInstanceButton({ className }) {
     );
 }
 
+function SearchBox() {
+    const [searchValue, setSearchValue] = useState("");
+
+    function handleSearch(e){
+        if (e.key ===  "Enter") {
+            search()
+        }
+    }
+
+    function search() {
+        console.log(searchValue);
+    }
+
+    return (
+        <div className="cover">
+            <input 
+                type="text" placeholder="Search" 
+                onKeyDown={handleSearch}
+                onChange={(e) => setSearchValue(e.target.value)}    
+            />
+            <div className="search icon" onClick={search}></div>
+        </div>
+    );
+}
+
 function ListInstances() {
     return (
         <div>
@@ -65,11 +90,12 @@ function ListInstances() {
     );
 }
 
-export function Instances() {
+export function ToolBar() {
     return (
-        <div className="instances">
+        <div className="toolbar">
             <div className="utils">
-                    <NewInstanceButton className={"instance-button"}/>
+                    <NewInstanceButton className={"toolbar-button"}/>
+                    <SearchBox />
                     <FilterInstanceButton className={"filter-button"}/>
             </div>
             <div className="list-instances">
