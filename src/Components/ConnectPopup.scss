@@ -12,12 +12,12 @@
 }
 
 .popup {
-    margin: 70px auto;
+    margin: 150px auto;
     padding: 20px;
     background: #fff;
-    border-radius: 5px;
-    width: 30%;
+    width: 40%;
     position: relative;
+    border-radius: 10px;
     transition: all 5s ease-in-out;
 }
 
@@ -44,7 +44,50 @@
 }
 
 .popup .content {
-    max-height: 30%;
     overflow: auto;
     font-family: "Draft B Regular";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.connexion-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.content button {
+    font-family: "Draft B Regular";
+    border: 2px solid var(--main-light-color);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--main-light-color);
+    margin-top: 15px;
+}
+
+input[type="text"]:invalid ~ button,
+input[type="password"]:invalid ~ button {
+    border-color: grey;
+    color: grey;
+    opacity: .25;
+}
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.form-error {
+    color: red;
+    font-size: 10px;
 }

@@ -1,10 +1,4 @@
-//todo  : put most value in vars when finished
-/*
-$color-background: #443742;
-$color-typo: #CEA07E;
-*/
 .toolbar {
-    //background-color: #CEA07E;
     height: 80%;
     top: 50px;
     position: relative;
@@ -21,15 +15,15 @@ $color-typo: #CEA07E;
 
 .toolbar-button {
     font-family: 'Draft B Regular';
-    border: 2px solid #CEA07E;
+    border: 2px solid var(--main-light-color);
     border-radius: 4px;
     background-color: transparent;
     font-size: 20px;
-    color: #CEA07E;
+    color: var(--main-light-color);
 }
 
 .filter-label {
-    border: 2px solid #CEA07E;
+    border: 2px solid var(--main-light-color);
     border-radius: 4px;
     padding: 1px 6px;
     margin-bottom: 2px;
@@ -37,14 +31,14 @@ $color-typo: #CEA07E;
 
 .filter-label:hover {
     transition-duration: 300ms;
-    color: #EDD9A3;
-    border-color: #EDD9A3;
+    color: var(--main-selected-color);
+    border-color: var(--main-selected-color);
 }
 
 .filter-label,
 .dropdown-options label {
     appearance: auto;
-    color: #CEA07E;
+    color: var(--main-light-color);
     font-family: 'Draft B Regular';
     padding: 1px 6px;
 }
@@ -52,10 +46,10 @@ $color-typo: #CEA07E;
 
 .dropdown-options label:hover {
     transition-duration: 300ms;
-    color: #EDD9A3;
+    color: var(--main-selected-color);
     margin-left: 5px;
     padding-left: 5px;
-    border-left: 2px solid #EDD9A3;
+    border-left: 2px solid var(--main-selected-color);
     transition: all 0.3s ease;
     bottom: 50%;
     top: 0;
@@ -63,8 +57,8 @@ $color-typo: #CEA07E;
 
 .toolbar-button:hover {
     transition-duration: 300ms;
-    border-color: #EDD9A3;
-    color: #EDD9A3;
+    border-color: var(--main-selected-color);
+    color: var(--main-selected-color);
 }
 
 input[type=checkbox] {
@@ -106,23 +100,23 @@ input[type=checkbox] {
     justify-content: flex-end;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     outline: 0;
     border-radius: 4px;
-    border: 2px solid #CEA07E;
-    color: #EDD9A3;
+    border: 2px solid var(--main-light-color);
+    color: var(--main-selected-color);
     font-size: 20px;
     padding: 5px;
     background-color: transparent;
-    border-color: #CEA07E;
 }
 
-input[type=text]:not(:placeholder-shown) {
-    border-color: #EDD9A3;
+input[type=text]:not(:placeholder-shown),
+input[type=password]:not(:placeholder-shown)  {
+    border-color: var(--main-selected-color);
 }
 
 .search.icon {
-    color: #CEA07E;
+    color: var(--main-light-color);
     position: absolute;
     margin-top: 11px;
     margin-right: 11px;
@@ -136,7 +130,7 @@ input[type=text]:not(:placeholder-shown) {
 
 .search.icon:hover {
     transition-duration: 300ms;
-    color: #EDD9A3;
+    color: var(--main-selected-color);
 }
 
 .search.icon:before {
@@ -150,5 +144,5 @@ input[type=text]:not(:placeholder-shown) {
 }
 
 ::placeholder  {
-    color: #EDD9A3;
+    color: var(--main-selected-color);
 }

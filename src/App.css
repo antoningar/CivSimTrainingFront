@@ -1,6 +1,15 @@
+:root {
+  --main-dark-color: #443742;
+  --main-color: #846C5B;
+  --main-light-color: #CEA07E;
+  --main-selected-color: #EDD9A3;
+
+  --translation-duration: 300ms;
+}
+
 .App {
   text-align: center;
-  background-color: #846C5B;
+  background-color: var(--main-color);
   font-size: 20px;
   height: 100vh;
 }

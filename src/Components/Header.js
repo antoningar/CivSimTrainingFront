@@ -15,7 +15,7 @@ function ConnectButton() {
 
     return (
         <div>
-            <button onClick={clickConnect}>CONNECT</button>
+            <button className="connect-button" onClick={clickConnect}>CONNECT</button>
             {
                 showConnect && (
                     <ConnectPopup callback={connectCallback}/>
