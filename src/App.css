@@ -1,8 +1,33 @@
+:root {
+  --dark-color: #443742;
+  --main-color: #846C5B;
+  --light-color: #CEA07E;
+  --selected-color: #EDD9A3;
+  --ultra-light-color: #E2E8C0;
+
+  --translation-duration: 300ms;
+  --font-size: 20px;
+}
+
 .App {
   text-align: center;
-  background-color: #846C5B;
+  background-color: var(--main-color);
   font-size: 20px;
   height: 100vh;
+}
+
+h2 {
+  color: var(--dark-color);
+  font-family: "Draft B Regular";
+  font-size: 30px;
+}
+
+h3 {
+  color: var(--dark-color);
+  font-family: "Draft B Regular";
+  font-size: 25px;
+  margin: 0;
+  font-weight: 0;
 }
 
 

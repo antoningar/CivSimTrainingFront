@@ -1,0 +1,115 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+}
+
+.popup {
+    margin: 150px auto;
+    padding: 20px;
+    background: #fff;
+    width: 40%;
+    position: relative;
+    border-radius: 10px;
+    transition: all 5s ease-in-out;
+    background-color: var(--main-color);
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.popup .close:hover {
+    color: var(--ultra-light-color);
+}
+
+.popup .content {
+    overflow: auto;
+    font-family: "Draft B Regular";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.connexion-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.content button {
+    font-family: "Draft B Regular";
+    border: 2px solid var(--selected-color);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--selected-color);
+    margin-top: 15px;
+}
+
+.content .connexion-form button:hover {
+    transition: var(--translation-duration);
+    border-color: var(--light-color);
+    color: var(--light-color);    
+}
+
+.content input[type="text"]:invalid ~ button,
+.content input[type="password"]:invalid ~ button {
+    border-color: #CEA07E;
+    color: #CEA07E;
+    opacity: .55;
+}
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.form-error {
+    color: var(--ultra-light-color);
+    font-size: 10px;
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation button {
+    border: 2px solid var(--light-color);
+    border-radius: 4px;
+    background-color: var(--dark-color);
+    font-size: 20px;
+    color: var(--light-color);
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.confirmation button:hover {
+    transition-duration: 250ms;
+    border-color: var(--selected-color);
+    color: var(--selected-color);
+}
