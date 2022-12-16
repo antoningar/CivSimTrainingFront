@@ -15,15 +15,15 @@
 
 .toolbar-button {
     font-family: 'Draft B Regular';
-    border: 2px solid var(--main-light-color);
+    border: 2px solid var(--light-color);
     border-radius: 4px;
     background-color: transparent;
     font-size: 20px;
-    color: var(--main-light-color);
+    color: var(--light-color);
 }
 
 .filter-label {
-    border: 2px solid var(--main-light-color);
+    border: 2px solid var(--light-color);
     border-radius: 4px;
     padding: 1px 6px;
     margin-bottom: 2px;
@@ -31,14 +31,14 @@
 
 .filter-label:hover {
     transition-duration: 300ms;
-    color: var(--main-selected-color);
-    border-color: var(--main-selected-color);
+    color: var(--selected-color);
+    border-color: var(--selected-color);
 }
 
 .filter-label,
 .dropdown-options label {
     appearance: auto;
-    color: var(--main-light-color);
+    color: var(--light-color);
     font-family: 'Draft B Regular';
     padding: 1px 6px;
 }
@@ -46,10 +46,10 @@
 
 .dropdown-options label:hover {
     transition-duration: 300ms;
-    color: var(--main-selected-color);
+    color: var(--selected-color);
     margin-left: 5px;
     padding-left: 5px;
-    border-left: 2px solid var(--main-selected-color);
+    border-left: 2px solid var(--selected-color);
     transition: all 0.3s ease;
     bottom: 50%;
     top: 0;
@@ -57,8 +57,8 @@
 
 .toolbar-button:hover {
     transition-duration: 300ms;
-    border-color: var(--main-selected-color);
-    color: var(--main-selected-color);
+    border-color: var(--selected-color);
+    color: var(--selected-color);
 }
 
 input[type=checkbox] {
@@ -103,8 +103,8 @@ input[type=checkbox] {
 input[type=text], input[type=password] {
     outline: 0;
     border-radius: 4px;
-    border: 2px solid var(--main-light-color);
-    color: var(--main-selected-color);
+    border: 2px solid var(--light-color);
+    color: var(--selected-color);
     font-size: 20px;
     padding: 5px;
     background-color: transparent;
@@ -112,11 +112,11 @@ input[type=text], input[type=password] {
 
 input[type=text]:not(:placeholder-shown),
 input[type=password]:not(:placeholder-shown)  {
-    border-color: var(--main-selected-color);
+    border-color: var(--selected-color);
 }
 
 .search.icon {
-    color: var(--main-light-color);
+    color: var(--light-color);
     position: absolute;
     margin-top: 11px;
     margin-right: 11px;
@@ -130,7 +130,7 @@ input[type=password]:not(:placeholder-shown)  {
 
 .search.icon:hover {
     transition-duration: 300ms;
-    color: var(--main-selected-color);
+    color: var(--selected-color);
 }
 
 .search.icon:before {
@@ -144,5 +144,5 @@ input[type=password]:not(:placeholder-shown)  {
 }
 
 ::placeholder  {
-    color: var(--main-selected-color);
+    color: var(--selected-color);
 }

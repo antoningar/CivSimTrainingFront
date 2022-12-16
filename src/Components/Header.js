@@ -2,11 +2,11 @@ import { useState } from "react";
 import  { ConnectPopup } from "./ConnectPopup";
 import "./Header.css";
 
-function ConnectButton() {
-    const [showConnect, setShowConnect] = useState(false);
+export function Header() {
+    const [showConnect, setShowConnect] = useState();
 
-    function clickConnect() {
-        setShowConnect(true);
+    function clickConnect(show) {
+        setShowConnect(show);
     }
 
     function connectCallback(isConnect) {
@@ -14,22 +14,16 @@ function ConnectButton() {
     }
 
     return (
-        <div>
-            <button className="connect-button" onClick={clickConnect}>CONNECT</button>
-            {
-                showConnect && (
-                    <ConnectPopup callback={connectCallback}/>
-                )
-            }
-        </div>
-    );
-}
-
-export function Header() {
-    return (
         <div className="header">
             <label className="title">CIV SIM TRAINING</label>
-            <ConnectButton />
+            <div>
+                <button className="connect-button" onClick={clickConnect}>CONNECT</button>
+                {
+                    showConnect && (
+                        <ConnectPopup callback={connectCallback}/>
+                    )
+                }
+            </div>
         </div>
     )
 }

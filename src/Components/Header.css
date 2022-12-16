@@ -3,29 +3,36 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-    font-family: 'OPTIColumna-Solid';
-    background-color: var(--main-dark-color);
+    background-color: var(--dark-color);
+    font-family: 'Draft B Regular';
 }
 
 .header .connect-button {
-    font-family: 'Draft B Regular';
     position: absolute;
     right: 40px;
-    border: 2px solid var(--main-light-color);
+    border: 2px solid var(--light-color);
     border-radius: 4px;
-    background-color: var(--main-dark-color);
+    background-color: var(--dark-color);
     font-size: 20px;
-    color: var(--main-light-color);
+    color: var(--light-color);
     top: 25px;
+    padding: 5px;
+}
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header button:hover {
     transition-duration: 250ms;
-    border-color: var(--main-selected-color);
-    color: var(--main-selected-color);
+    border-color: var(--selected-color);
+    color: var(--selected-color);
 }
 
 .title {
+    font-family: 'OPTIColumna-Solid';
     font-size: 40px;
-    color: var(--main-light-color);
+    color: var(--light-color);
 }
