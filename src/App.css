@@ -30,6 +30,20 @@ h3 {
   font-weight: 0;
 }
 
+button {
+    font-family: "Draft B Regular";
+    border: 2px solid var(--selected-color);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 20px;
+    color: var(--selected-color);
+}
+
+button:hover {
+    transition: var(--translation-duration);
+    border-color: var(--light-color);
+    color: var(--light-color);    
+}
 
 @font-face {
   font-family: 'OPTIColumna-Solid';

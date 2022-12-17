@@ -1,9 +1,15 @@
 import { useState } from "react";
+import { NewInstance } from "./NewInstancePopup";
 import "./Toolbar.scss";
 
-function NewInstanceButton({ className }) {
+function NewInstanceButton({setShowNewInstances}) {
     return (
-        <button className={className}>New instance</button>
+        <div>
+            <button
+                className="toolbar-button"
+                onClick={() => setShowNewInstances(true)}
+            >New instance</button>
+        </div>
     );
 }
 
@@ -91,15 +97,20 @@ function ListInstances() {
 }
 
 export function ToolBar() {
+    const [showNewInstances, setShowNewInstances]  = useState(false);
+
     return (
-        <div className="toolbar">
-            <div className="utils">
-                    <NewInstanceButton className={"toolbar-button"}/>
-                    <SearchBox />
-                    <FilterInstanceButton className={"filter-button"}/>
-            </div>
-            <div className="list-instances">
-                <ListInstances />
+        <div>
+            { showNewInstances && (<NewInstance setShowNewInstances={setShowNewInstances}/>) }
+            <div className="toolbar">
+                <div className="utils">
+                        <NewInstanceButton setShowNewInstances={setShowNewInstances}/>
+                        <SearchBox />
+                        <FilterInstanceButton className={"filter-button"}/>
+                </div>
+                <div className="list-instances">
+                    <ListInstances />
+                </div>
             </div>
         </div>
     );
